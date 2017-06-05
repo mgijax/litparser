@@ -6,6 +6,12 @@
 
 USAGE='Usage: $0 <path to PDF>\n'
 
+# determine script's installation directory and cd to it.
+BASENAME=`basename $0`; NOTBASENAME=`echo $0 | sed "s/$BASENAME$//"`
+[ "$NOTBASENAME" != "" ] && {
+   cd $NOTBASENAME
+}
+
 if [ $# -ne 1 ]; then
 	echo $USAGE
 	echo 'Error: exactly one parameter required\n'
