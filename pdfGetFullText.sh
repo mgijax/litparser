@@ -1,8 +1,10 @@
 #!/usr/local/bin/bash
 
-# Name: pdf2text.sh
-# Purpose: extract (using a pdfminer) the text from a PDF file and write it
-#	to stdout
+# Name: pdfGetFullText.sh
+# Purpose: extract (using a pdfminer) the complete text from a PDF file and
+#	write it to stdout
+# Notes: The underlying package (pdfminer) has an unstated limit of 64k for
+#	text extracted per run, so we need to work around that here.
 
 USAGE='Usage: $0 <path to PDF>\n'
 
@@ -24,7 +26,12 @@ if [ ! -f $1 ]; then
 	exit 1
 fi
 
-# pick up the virtual python environment and run pdfminer extraction script
-source ./virtenv/bin/activate 
-./pdfminer/build/scripts-2.7/pdf2txt.py $1
-exit $?
+FILE=/tmp/litparser.$$.txt
+
+if [ -f ${FILE} ]; then
+	rm ${FILE}
+fi
+
+pdftotext -q -nopgbrk $1 $FILE
+cat ${FILE}
+rm ${FILE}
