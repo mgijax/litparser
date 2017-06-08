@@ -33,5 +33,7 @@ if [ -f ${FILE} ]; then
 fi
 
 pdftotext -q -nopgbrk $1 $FILE
+EXITCODE=$?
 cat ${FILE}
 rm ${FILE}
+exit ${EXITCODE}
