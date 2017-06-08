@@ -1,20 +1,4 @@
 #!/bin/sh
 
-# set up virtual environment, so we can run with Python 2.7
-python virtualenv.py -p python2.7 virtenv
-source virtenv/bin/activate
-
-# if we already have pdfminer exported, look for updates.
-# if not, clone it from GitHub.
-if [ -d pdfminer ]; then
-	cd pdfminer
-	git pull
-	cd ..
-else
-	git clone git@github.com:euske/pdfminer.git
-fi
-
-# run the setup for pdfminer, so it will integrate with virtual Python 2.7
-cd pdfminer
-python setup.py install
-
+# no installation needed at this point
+echo "Completed"
