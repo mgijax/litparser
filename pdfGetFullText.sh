@@ -1,10 +1,8 @@
 #!/usr/local/bin/bash
 
 # Name: pdfGetFullText.sh
-# Purpose: extract (using a pdfminer) the complete text from a PDF file and
-#	write it to stdout
-# Notes: The underlying package (pdfminer) has an unstated limit of 64k for
-#	text extracted per run, so we need to work around that here.
+# Purpose: extract (using pdftotext, included with our Linux installation) the
+#	complete text from a PDF file and write it to stdout
 
 USAGE='Usage: $0 <path to PDF>\n'
 
