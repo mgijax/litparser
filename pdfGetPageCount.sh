@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 
 # Name: pdfPageCount.sh
 # Purpose: get the number of pages in a PDF file write it to stdout

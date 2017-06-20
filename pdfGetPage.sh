@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 
 # Name: pdfGetPage.sh
 # Purpose: extract (using a pdfminer) the text for a specified page number

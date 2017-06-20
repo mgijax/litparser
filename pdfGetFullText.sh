@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 
 # Name: pdfGetFullText.sh
 # Purpose: extract (using pdftotext, included with our Linux installation) the
