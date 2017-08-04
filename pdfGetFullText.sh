@@ -30,7 +30,6 @@ if [ -f ${FILE} ]; then
 	rm ${FILE}
 fi
 
-#pdftotext -q -nopgbrk $1 $FILE
 pdftotext -enc ASCII7 -q -nopgbrk $1 $FILE
 EXITCODE=$?
 cat ${FILE}
