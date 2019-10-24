@@ -30,7 +30,8 @@ if [ -f ${FILE} ]; then
 	rm ${FILE}
 fi
 
-pdftotext -enc ASCII7 -q -nopgbrk $1 $FILE
+#pdftotext -enc ASCII7 -q -nopgbrk $1 $FILE
+pdftotext -enc ASCII7 -q -nopgbrk "$1"  - | awk '{sub(/$/,"\n"); print}'  > $FILE
 EXITCODE=$?
 cat ${FILE}
 rm ${FILE}
