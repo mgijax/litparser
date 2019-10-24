@@ -1,3 +1,8 @@
+TAG: litparser-tr13190-1
+DATE: 10/24/2019
+STAFF: sc
+1) tr13190 - updated call to pdftotext for use with new version of that utility 
+
 TAG: litparser-tr13190-BP
 DATE: 10/24/2019
 STAFF: sc
