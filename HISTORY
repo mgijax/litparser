@@ -1,7 +1,7 @@
-TAG: litparser-tr13190-1
-DATE: 10/24/2019
+TAG: litparser-1-0-14-1
+DATE: 10/30/2019
 STAFF: sc
-1) tr13190 - updated call to pdftotext for use with new version of that utility 
+1) tr13190 - merge branch to trunk
 
 TAG: litparser-tr13190-BP
 DATE: 10/24/2019
