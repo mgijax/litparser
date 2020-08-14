@@ -1,3 +1,22 @@
+DATE: 08/13/2020
+STAFF: jak
+1) merge from master, including tr13312
+
+TAG: 6-0-15-1
+DATE: 08/04/2020
+STAFF: jak
+1) tr13312 - JCI Insights
+
+TAG: litparser-6-0-14-1
+DATE: 10/30/2019
+STAFF: sc
+1) tr13190 - merge branch to trunk
+
+TAG: litparser-tr13190-BP
+DATE: 10/24/2019
+STAFF: sc
+1)Branch point tag 
+
 TAG: litparser-6-0-11-1
 DATE: 10/05/2017
 STAFF: lec

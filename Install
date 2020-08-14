@@ -1,4 +1,7 @@
 #!/bin/sh
 
+# verify there is a config file, needed for pdfGetFullText.sh
+. ./Configuration      
+
 # no installation needed at this point
 echo "Completed"
