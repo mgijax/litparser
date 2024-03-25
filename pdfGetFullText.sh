@@ -29,7 +29,7 @@ if [ ! -f "$1" ]; then
 fi
 
 # Check pdftotext version
-EXPECTEDVERSION="4.02"
+EXPECTEDVERSION="4.05"
 version=`$PDFTOTEXT -v 2>&1 | grep version | awk '{print $3}'`
 if [ "$version" != "$EXPECTEDVERSION" ]; then
     echo "$0: Error: $PDFTOTEXT version is $version. Expecting $EXPECTEDVERSION" >&2
